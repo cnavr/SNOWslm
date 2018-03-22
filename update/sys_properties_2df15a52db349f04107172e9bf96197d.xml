@@ -2,7 +2,8 @@
 <record_update table="sys_properties">
     <sys_properties action="INSERT_OR_UPDATE">
         <choices/>
-        <description>authentication  token</description>
+        <description>authentication  token&#13;
+2425fbcb-5838-42b5-9981-7ec4ee9d49a0</description>
         <ignore_cache>false</ignore_cache>
         <is_private>false</is_private>
         <name>x_tieoy_slm_integr.authentication_token</name>
@@ -13,7 +14,7 @@
         <sys_created_on>2018-03-14 15:36:09</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>2df15a52db349f04107172e9bf96197d</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>x_tieoy_slm_integr.authentication_token</sys_name>
         <sys_package display_value="SLM Integration" source="x_tieoy_slm_integr">45394bacdbb49bc0107172e9bf9619a5</sys_package>
         <sys_policy/>
@@ -21,7 +22,7 @@
         <sys_scope display_value="SLM Integration">45394bacdbb49bc0107172e9bf9619a5</sys_scope>
         <sys_update_name>sys_properties_2df15a52db349f04107172e9bf96197d</sys_update_name>
         <sys_updated_by>admin.xxnavrac</sys_updated_by>
-        <sys_updated_on>2018-03-21 15:49:26</sys_updated_on>
+        <sys_updated_on>2018-03-22 12:46:14</sys_updated_on>
         <type>string</type>
         <value>bfe6877e-bc7e-4621-bf80-7cebc1a19b13</value>
         <write_roles/>
