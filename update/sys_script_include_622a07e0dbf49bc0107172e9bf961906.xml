@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_tieoy_slm_integr.SLMintegrationFunctions</api_name>
+        <client_callable>false</client_callable>
+        <description>Functions and methods that are used in the SLM Integration</description>
+        <name>SLMintegrationFunctions</name>
+        <script><![CDATA[var SLMintegrationFunctions = Class.create();
+SLMintegrationFunctions.prototype = {
+	// constant used in this script
+	CAPABILITY: 'SLM',
+	
+    initialize: function() {
+    },
+  /*_________________________________________________________________
+   * Description:The function creates and calls REST message (uses function described in https://goo.gl/o5i77s)
+   * Parameters: method - GET/POST
+			     endpoint - URL for the REST message
+				 password - access token
+				 body - used for POST methods
+   * Returns:  object that represents result (described in https://goo.gl/XJfrMF) of the REST message
+   EXAMPLE input variables:
+    var method = "GET";
+	var endpoint = "https://10.42.40.93/ui/api/v2/identity/customers"; //api/v2/automation/jobs";
+	var password = "2425fbcb-5838-42b5-9981-7ec4ee9d49a0"; //Token for CNA
+	var body = '';
+	var midServer = 'TECASNCMID_DISC_TIETODEV1';
+   ________________________________________________________________*/	
+getResponse: function(method, endpoint, password, body){
+		//var midserver = this.get
+	    var rest = new sn_ws.RESTMessageV2();
+		rest.setHttpMethod(method);
+		rest.setEndpoint(endpoint);
+		rest.setRequestHeader('Accept', 'application/json');
+		rest.setRequestHeader('X-Auth-Token', password);
+  var midServer = this.getMidServer([this.CAPABILITY]);//'TECASNCMID_DISC_TIETODEV1';
+        rest.setMIDServer(midServer);
+		
+		if (typeof body !== undefined){
+			rest.setRequestBody(body);
+		}
+		
+			
+		gs.info('About to execute rest call to endpoint ' + endpoint + ' method ' + method);
+		
+		var response = rest.execute();
+		
+	return response;
+},
+	
+	/*_________________________________________________________________
+   * Description: function that returns MID server for Capability that is in the input parameter
+   * Parameters: capability (it has to be array [])
+   * Returns: MIDserver
+   ________________________________________________________________*/
+   
+	getMidServer: function(capability) {
+	var msf = new global.MIDServerFinder();
+    msf.setCapabilities(capability);
+	var midName = msf.getMIDServers();
+	return midName[0];
+	},
+	
+    type: 'SLMintegrationFunctions'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin.xxnavrac</sys_created_by>
+        <sys_created_on>2018-03-09 09:13:38</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>622a07e0dbf49bc0107172e9bf961906</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>SLMintegrationFunctions</sys_name>
+        <sys_package display_value="SLM Integration" source="x_tieoy_slm_integr">45394bacdbb49bc0107172e9bf9619a5</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="SLM Integration">45394bacdbb49bc0107172e9bf9619a5</sys_scope>
+        <sys_update_name>sys_script_include_622a07e0dbf49bc0107172e9bf961906</sys_update_name>
+        <sys_updated_by>admin.xxnavrac</sys_updated_by>
+        <sys_updated_on>2018-03-20 09:31:36</sys_updated_on>
+    </sys_script_include>
+</record_update>

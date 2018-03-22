@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="u_method" label="Method" language="en" table="var__m_var_dictionary_12305a3bdb34df44107172e9bf96194b">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_method</element>
+            <help/>
+            <hint/>
+            <label>Method</label>
+            <language>en</language>
+            <name>var__m_var_dictionary_12305a3bdb34df44107172e9bf96194b</name>
+            <plural>Method</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin.xxnavrac</sys_created_by>
+            <sys_created_on>2018-03-19 07:21:44</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>ccc01a7fdb34df44107172e9bf96192c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Method</sys_name>
+            <sys_package display_value="SLM Integration" source="x_tieoy_slm_integr">45394bacdbb49bc0107172e9bf9619a5</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="SLM Integration">45394bacdbb49bc0107172e9bf9619a5</sys_scope>
+            <sys_update_name>sys_documentation_var__m_var_dictionary_12305a3bdb34df44107172e9bf96194b_u_method_en</sys_update_name>
+            <sys_updated_by>admin.xxnavrac</sys_updated_by>
+            <sys_updated_on>2018-03-19 07:21:44</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

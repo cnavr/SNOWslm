@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="LifecycleSection" section_id="e0ea7237dbbcdf44107172e9bf9619a3" sys_domain="global" table="cmdb_ci_infra_service" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>install_status</element>
+            <position>0</position>
+            <sys_created_by>admin.xxnavrac</sys_created_by>
+            <sys_created_on>2018-03-19 10:26:34</sys_created_on>
+            <sys_id>a30bb2f7dbbcdf44107172e9bf961925</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="LifecycleSection" display_value="LifecycleSection" name="cmdb_ci_infra_service" sys_domain="global" view="Default view">e0ea7237dbbcdf44107172e9bf9619a3</sys_ui_section>
+            <sys_updated_by>admin.xxnavrac</sys_updated_by>
+            <sys_updated_on>2018-03-19 10:26:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>LifecycleSection</caption>
+            <header>false</header>
+            <name>cmdb_ci_infra_service</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin.xxnavrac</sys_created_by>
+            <sys_created_on>2018-03-19 10:25:49</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e0ea7237dbbcdf44107172e9bf9619a3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>LifecycleSection</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="SLM Integration" source="x_tieoy_slm_integr">45394bacdbb49bc0107172e9bf9619a5</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="SLM Integration">45394bacdbb49bc0107172e9bf9619a5</sys_scope>
+            <sys_update_name>sys_ui_section_e0ea7237dbbcdf44107172e9bf9619a3</sys_update_name>
+            <sys_updated_by>admin.xxnavrac</sys_updated_by>
+            <sys_updated_on>2018-03-19 10:25:49</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>
